@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-24T11:24:15.510Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="BdNH7ZNY1KhqwcLV9gtl" version="24.2.9" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-25T04:09:45.202Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="27YaIOB4kh07hJBmSEmG" version="24.2.9" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1034" dy="493" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -31,14 +31,61 @@
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-10" value="Want to achieve the Same throughput?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="150" y="260" width="140" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="Store the requests in files and replay it at specific time and&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="160" y="400" width="120" height="60" as="geometry" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="Store the requests in files and replay it at specific time and with specific configuration." style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="400" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-12" value="Redirect Requests to the target endpoint" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="340" y="295" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_RNrMu8ABu7_3LyVYco6-1" value="Run Go-Replay to sniff incoming requests" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="160" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-3" value="This is all an automatic process we just have to manually start the Go-replay application at the source server.&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="530" y="270" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-4" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="510" y="80" width="20" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_RNrMu8ABu7_3LyVYco6-6" target="_RNrMu8ABu7_3LyVYco6-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-6" value="Collect from the Production server the requests needed for testing" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="255" y="570" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_RNrMu8ABu7_3LyVYco6-13" target="_RNrMu8ABu7_3LyVYco6-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-13" value="Modify the URLs in desired format." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="255" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_RNrMu8ABu7_3LyVYco6-14" target="_RNrMu8ABu7_3LyVYco6-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-14" value="Run J-meter testing command with multiple threads" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="255" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_RNrMu8ABu7_3LyVYco6-15" target="_RNrMu8ABu7_3LyVYco6-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-15" value="Try different thread count to match the real time throughput" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="255" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_RNrMu8ABu7_3LyVYco6-15" target="_RNrMu8ABu7_3LyVYco6-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-22" value="Hit and trial method to find the needed throughput" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="905" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-24" value="J-meter controls and fires the request and thus the TAT for the application is also considered in the total response time of the testing urls." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="990" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-25" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;size=0.5;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="540" y="570" width="20" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="_RNrMu8ABu7_3LyVYco6-26" value="All of these are manual and iterative process steps to be followed for testing using previous mechanism" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="570" y="815" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
