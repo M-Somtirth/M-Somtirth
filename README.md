@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @M-Somtirth
 - 👀 I’m interested in Machine Learning
-- 🌱 I’m currently pursued Masters of Computer Science and Engineering
-- 💞️ System Engineer at Indiamart Intermesh Limited
+- 🌱 I’m a Masters of Computer Science and Engineering
+- 💞️ Dev-2 at Hyland 
 - 📫 How to reach me somtirthacse@gmail.com
 
 <!---
